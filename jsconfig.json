@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@root": [""],
+      "@base/*": ["src/base/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"]
+}

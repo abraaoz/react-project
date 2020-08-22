@@ -1,0 +1,18 @@
+// HOW TO USE THIS FILE
+//
+// In any .less file:
+//
+// @import "src/MediaQueries.less"
+//
+// @media @sm {
+// ...
+// }
+
+@md_start: 500px;
+@lg_start: 1000px;
+
+@sm: ~"screen and (max-width: @{md_start})";
+@sm_and_md: ~"screen and (max-width: @{lg_start})";
+@md: ~"screen and (min-width: @{md_start}) and (max-width: @{lg_start})";
+@md_and_lg: ~"screen and (min-width: @{md_start})";
+@lg: ~"screen and (min-width: @{lg_start})";

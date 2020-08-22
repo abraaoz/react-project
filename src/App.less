@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap");
+@import "src/MediaQueries.less";
+
+@color1: #18d174;
+@color2: #1a1a1a;
+
+:root {
+  --color1: @color1;
+  --color2: @color2;
+
+  --font-size-sm: 0.8rem;
+  --font-size: 1rem;
+  --font-size-lg: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: "Exo", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.custom-scrollbar {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: lighten(@color1, 10%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: lighten(@color1, 25%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: lighten(@color1, 35%);
+  }
+}
+
+html {
+  .custom-scrollbar;
+}
+
+body {
+  font-size: 16px;
+}
